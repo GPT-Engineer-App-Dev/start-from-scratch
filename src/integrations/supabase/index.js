@@ -1,18 +1,22 @@
+/* supabase integration types
+
 // Supabase Table Definitions
 
-// Event table: events
-//     id: number
-//     created_at: string
-//     name: string
-//     date: string
-//     venue_id: number
-//     is_starred: boolean
+Event // table: events
+    id: number
+    created_at: string
+    name: string
+    date: string
+    venue_id: number
+    is_starred: boolean
 
-// Comment table: comments
-//     id: number
-//     created_at: string
-//     content: string
-//     event_id: number // foreign key to Event
+Comment // table: comments
+    id: number
+    created_at: string
+    content: string
+    event_id: number // foreign key to Event
+
+*/
 
 // Supabase Client Initialization
 import { createClient } from '@supabase/supabase-js';
